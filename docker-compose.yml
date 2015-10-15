@@ -1,0 +1,8 @@
+buildkite:
+ build: .
+ dockerfile: Dockerfile
+ environment:
+  - DEBUG=true
+ env_file: .env
+ volumes:
+  - /opt/buildkite-docker/data:/data
